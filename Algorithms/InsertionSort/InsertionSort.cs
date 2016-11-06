@@ -13,8 +13,8 @@ class InsertionSort
         List<int> set =
             Console.ReadLine().Split((char[]) null, StringSplitOptions.RemoveEmptyEntries).Select(int.Parse).ToList();
 
-        //Stopwatch counter = new Stopwatch();
-        //counter.Start();
+        Stopwatch counter = new Stopwatch();
+        counter.Start();
 
         int size = set.Count;
         for (int y = 0; y < size; y++)
@@ -38,9 +38,9 @@ class InsertionSort
             }
         }
 
-        //counter.Stop();
+        counter.Stop();
         Console.WriteLine(string.Join(" ", set));
-        //Console.WriteLine(counter.Elapsed);
+        Console.WriteLine(counter.Elapsed);
     }
 
     static void InsertElement(List<int> set, int i)

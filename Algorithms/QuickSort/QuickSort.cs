@@ -27,5 +27,10 @@ class QuickSort
                 arr[p] = pivot;
             }
         }
+
+        if (p < arr.Length - 2)
+        {
+            MyQuickSort(arr, p + 1);
+        }
     }
 }
